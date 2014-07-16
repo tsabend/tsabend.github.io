@@ -1,0 +1,38 @@
+p {
+	color:purple;
+	font-family:Garamond, sans-serif;
+}
+
+h1 {
+	color:orange;
+}
+
+img {
+	height:100;
+	width:100;
+}
+
+ol li {
+	color:green;
+	background-color:yellow;
+	width:10px;
+}
+
+a:hover {
+	background-color:grey;
+	text-decoration: none;
+}
+
+.classy {
+	font-family: Helvetica, serif;
+	color:red;
+}
+
+#sidebar {
+	height:600px;
+	width:100px;
+	background-color: teal;
+	margin-right: 600px;
+	float:right;
+	
+}
