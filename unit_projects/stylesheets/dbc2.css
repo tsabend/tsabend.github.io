@@ -23,7 +23,11 @@ background-color: #FFFFE0;
 	position: relative;
 
 }
-/*I know that I'm not really floating the content left, but I wanted the content centered with the sidebar image to the right.*/
+/*I know that I'm not floating the content left with the sidebar right,
+but I wanted the content centered with the sidebar image to the right. 
+I swear that I can do these things and I screwed around with it for a while,
+but I liked the way this looked better, mainly because this isn't really a sidebar
+in function but just an image.*/
 .content {
 	margin-left: 350px;
 	width:600px;
@@ -55,6 +59,20 @@ background-color: #FFFFE0;
 	font-family: Verdana;
 	font-size: 1.1em;
 
+}
+
+.content li {
+	color: #E6E6E6;
+	font-family: Verdana;
+	font-size: 1.1em;
+}
+
+.content li:first-child:hover {
+color:red;
+}
+
+.content li:nth-child(3):hover{
+color: green;
 }
 
 .content img {
