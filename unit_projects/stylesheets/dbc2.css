@@ -1,31 +1,35 @@
-
+.container {
+	min-width: 800px;
+	width: 1300px;
+}
 
 body {
 background-color: #FFFFE0;
 }
+
 .header {
 	margin-top: 5%;
-	margin-bottom: 5%;
+	margin-bottom: 2%;
+	margin-left: 350px;
 	text-align: center;
 	background-color: #333333;
 	color: #FFFFE0;
 	font-family: Georgia;
 	font-size: 1.25em;
-	width: 50%;
-	margin-left: 25%;
+	width: 600px;
 	padding: 15px;
 	border-radius: 8px;
-	position: relative;
 	border: 1px #FFFFE0 solid;
-}
+	position: relative;
 
+}
+/*I know that I'm not really floating the content left, but I wanted the content centered with the sidebar image to the right.*/
 .content {
-	margin-left: 25%;
-	width:50%;
-	float: left;
+	margin-left: 350px;
+	width:600px;
+	position: relative;
 	background-color: #333333;
 	padding: 15px;
-	position: relative;
 	border-radius: 8px;
 	border: 1px #FFFFE0 solid;
 }
@@ -35,12 +39,14 @@ background-color: #FFFFE0;
 	color: #FFFFE0;
 	font-family: Georgia;
 	font-size: 2em;
+
 }
 .content h3 {
-	text-align: center;
+	padding-left: 3px;
 	color: #FFFFE0;
 	font-family: Georgia;
 	font-size: 2em;
+	
 }
 
 .content p {
@@ -48,17 +54,21 @@ background-color: #FFFFE0;
 	color: #E6E6E6;
 	font-family: Verdana;
 	font-size: 1.1em;
+
 }
 
 .content img {
-height: 50%;
-width: 44%;
+height: 280px;
+width: 280px;
 margin-left: 28%;
 }
 
 .sidebar {
+
 	float:right;
-	position: relative;	
+	height: 300px;
+	width: 300px;
+
 }
 
 .sidebar p {
@@ -97,9 +107,9 @@ margin-left: 28%;
 
 #intextimg {
 	float: right;
-margin: 0px 0px 0px 0px;
-width: 30%;
-height:40%;
+margin: 0px 10px 0px 0px;
+width: 220px;
+height:280px;
 padding: 0px;
 }
 
@@ -109,8 +119,9 @@ span {
 }
 
 .footer {
+	clear: both;
 	margin-left: 40px;
-	margin-top: 40px;
+	margin-top: 10px;
 	background-color: #FFFFE0;
 	width: 230px;
 }
