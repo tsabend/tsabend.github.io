@@ -5,7 +5,7 @@ html {
 #titleimage {
 	margin: 0 auto;
 	margin-top: 5%;
-	width:48%;
+	width:50%;
 
 }
 
@@ -17,7 +17,7 @@ html {
 #navbar {
 
 	text-align: center;
-	width:48%;
+	width:50%;
 	margin: 0 auto;
 }
 
@@ -38,7 +38,7 @@ html {
 }
 
 #content {
-	width:48%;
+	width:50%;
 	margin: 0 auto;
 }
 #content p {
@@ -78,6 +78,7 @@ html {
 }
 
 #sidebar {
+	float:right;
 	position:absolute;
     top:50%; bottom:0; left:80%;
     width:200px;
