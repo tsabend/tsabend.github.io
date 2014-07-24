@@ -64,6 +64,12 @@ html {
 	width: 360px;
 	border: solid 1px #cbcaca; 
 }
+
+.codepic {
+	margin: 0 auto;
+	margin-left: 22%;
+}
+
 .articledate {
 	color:#878787;
 	text-align: center;

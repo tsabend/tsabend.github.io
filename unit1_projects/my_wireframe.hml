@@ -1,0 +1,17 @@
+Website plan:
+
+I want this website to serve as a hub were people can read about me and get links to my technical and cultural blogs. I want to create a fluid grid and show off what I've learned about responsive web deisgn by creating a mobile, ipad and browser version of my layout. 
+
+Div Photoheader
+	Large photo that stretches 100% across the display. Text positioned over it
+
+Container: sets margins for the main content
+	Header: Navigation bar (I want to make this lock at the top so that if you scrolled down it would appear)
+		link to technical
+		link to cultural
+		link to twitter
+		link to github
+	article space
+		short personal bio
+	photos
+		3 images (display left-right when screen is big and stacked when screen is small)
