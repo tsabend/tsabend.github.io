@@ -5,12 +5,14 @@ I want this website to serve as a hub were people can read about me and get link
 Div Photoheader
 	Large photo that stretches 100% across the display. Text positioned over it
 
-Container: sets margins for the main content
-	Header: Navigation bar (I want to make this lock at the top so that if you scrolled down it would appear)
+Header: Navigation bar (I want to make this lock at the top so that if you scrolled down it would appear)
 		link to technical
 		link to cultural
 		link to twitter
 		link to github
+
+Container: sets margins for the main content
+
 	article space
 		short personal bio
 	photos
