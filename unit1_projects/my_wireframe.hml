@@ -17,3 +17,5 @@ Container: sets margins for the main content
 		short personal bio
 	photos
 		3 images (display left-right when screen is big and stacked when screen is small)
+
+Footer
