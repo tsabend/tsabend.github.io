@@ -1,0 +1,29 @@
+
+## Release 1: Research
+Research about some of the problems facing the tech world. Select one. 
+
+## Release 2: Blog
+Explain the problem and background in your blog, and then hypothesize potential solutions in your blog post. 
+
+<h3>Speech Recognition or Where is my Jetpack?</h3>
+
+<p>Many cultural critics and experts within the tech industry like Peter Thiel have bemoaned the lack of truly radical advanes in technology. Sure social media is nice, but it's hardly The Jetsons. Where's my hovercar?</p>
+<p>One of the technologies that has most captivated the imagination of science fiction is the computer that you talk to. From HAL to C-3PO, the idea that computers will interact with us based on what we say is ingrained into our image of the future. Apple's SIRI and Google's "OK, Google" functionality are mimics of this, but anyone who's used them knows that they really more like gimmicks. Despite the state of current technology, the upshot is real. Imagine travelling with an electronic translator or shouting at your house to turn up the heat from the relative comfort of your bed on a cold winter's day. Or just imagine that the speech recognition software at the customer support hotline doesn't ask you "Did you say: yes?" a million times (a request to which you can only helplessly reply "yes"). Will speech recognition technology ever be good enough to fulfill our visions of a future filled with robots?</p>
+<p>To fully understand the depth behind the issues with SR (speech recognition) you first need to understand how the current solutions work. First a human speaks which gets picked up by an analog-ditical converter (ADC), basically a mic, which samples the audio signal so it can be analyzed. Typically the audio will be compressed to a more uniform volume and then analysis is usually done by way of a fast-Fourier transform (FFT), which takes little snapshots of the audio signal every 1/100th of a second. FFTs can be used to match the audio signal with a library of existing word sounds usually centered around things like phonemes and plosives, the little sounds that we use to make up work.</p>
+<p>Wow that sounds like magic, huh? Well the truth is it doesn't work very well. Because pronounciation and the conditions of the auido sample (think background noises) vary greatly, the best the program can really do is genearate a probability. The statistical modeller used by most SRs today is called the Hidden Markov Model. This basically says how likely it is that a given phoneme is being spoken but it has to figure out where each phoneme started and ended, deal with the fact that we pronounce letters differently in different contexts, and account for background noise. I don't know if I've done enough to stress how incredibly difficult it is to be accurate using this method up to this point but let's just say super freaking difficult and requiring quite a bit of CPU strength.</p>
+<p>At this point, there are two solutions to improving your SRs output and many programs might take a bit of each. One is to limit the available vocabulary. If you limit the vocabulary you are looking for to just two words, chances are that you can differentiate between the two with a high degree of accuracy. Certainly higher than when you're just accepting any sond. More generally the tactic of limiting vocabulary sizes is called called Context Free Grammar. Using vocabulary banks can vastly improve outocmes by looking at statistical likelihood and with machine learning you can create an ever improving database of a words probability of being used.</p>
+<p>The other option is to have a system that you train to get better at recognizing your voice. By calibrating the system to your voice, you make it easier to match audio input to phonemes and improve the results of your SR.</p>
+<p>To sum up, here are some of the difficulties an SR faces:<ul><li>There are a ton of words (the average human's vocabulary is over 100,000 words)</li><li>People speak them differently</li><li>People don't always speak fluidly</li><li>Background Noise</li><li>Some letters are hard to distinguish</li></ul>Just look back at the previous 5 paragraphs and look how many fancy acronyms there were. This stuff is really hard. The fact that we're able to take our speech break it into 1/100ths of a part per second and reconstruct that into sentences is borderline magic. The reason so many people are frustrated is that it seems almost good enough to work and that it's been around for a while. We've gotten close enough to a working SR that people ridicule SIRI when she doesn't know if you want to call "Mom" or "Bob" when you scream at her in a crowded nigthclub. The idea that the technology is within reach but doesn't seem to be improving (SRs have been around since the early 80's) makes it all the more painful when it doesn't work.</p><p>The future of SR is uncertain. It's too valuable a feature to be abandoned but research seems slow because researchers are constantly increasing the difficulty of their own tasks by expanding vocabulary databases. One recent trend is the growing use of machine learning methods to analyze and catalog existing speech data. </p>
+
+
+sources
+
+(average human vocabulary?)
+
+	http://electronics.howstuffworks.com/gadgets/high-tech-gadgets/speech-recognition1.htm
+
+	http://www.newyorker.com/magazine/2011/11/28/no-death-no-taxes
+
+	http://www.cnn.com/2013/08/20/opinion/wheeler-voice-recognition/
+	http://project.uet.itgo.com/speech.htm
+	http://en.wikipedia.org/wiki/Speech_recognition
