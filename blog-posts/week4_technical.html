@@ -1,0 +1,47 @@
+<DOCTYPE! html>
+<html >
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<title>Phase 0 -- A Story of Pre-Work</title>
+
+	</head>
+<!--Title image-->
+	<div id="titleimage">
+		<img src="./imgs/phase0blogheader.jpg">
+	</div>
+<!--sidebar-->
+	<div id="sidebar">
+		<p style="text-decoration: underline">Recent Posts</p><br>
+		<p><strong>Technical Blog</strong></p>
+<a href="./week1_technical.html"><p>Week 1</p></a>
+<a href="./week1_technical.html"><p>Week 2</p></a>
+
+
+		<br>
+		<a href="./week1_cultural.html"><p><strong>Cultural Blog</strong></p></a>
+	</div>
+<!--Navigation bar -->
+	<div id="navbar">
+		<p><a href="./about.html">About</a> <a href="./week2_technical.html">Technical</a> <a href="./week1_cultural.html">Cultural</a> <a href="./contact.html">Contact</a></p>
+	<hr>
+	</div>
+
+<!--Content -->
+	<div id="content">
+		<h1 class="posttitle">#map, #awesome</h1>
+		<h5 class="articledate">10:42 AM -- 8/9/2014</p>
+		<h5 class="articledate">Thomas Abend</h1>
+		<p>This week at DBC we've been diving back into the world of ruby. One of the features that I like about ruby is it's variety of built in enumerable methods. These functions like inject, select, map are really useful when trying to manipulate and use arrays and hashes but can be called on any class that has an #each method. In general there isn't anything that these functions do that you couldn't do with an each iterator or even a "for loop" and some extra code, but having the functionality built into these methods makes it much easier to put things together quickly and simply.</p>
+		<p>The #map method is one of the most useful enumerators. Map works by taking a block of code and running that block on each object in your collection. It then outputs a new collection.</p>
+		<p> For example, if you had an array of numbers you could perform math on each of the elements of that array with map.</p>
+		<img src="imgs/week4_1.png">
+		<p>This isn't limited to numbers. Let's say you had an array of your favorite characters from the Fresh Prince. Suddenly you realized you forgot their last names! Map to the rescue:</p>
+		<img src="imgs/week4_2.png">
+		<p>#map also has a destructive version fo the method, so calling best_characters.map! would not only return the corrected array, it would modify the best_characters to include the corrected names.</p>
+		<p>Also interesting is that map has another name: collect. Collect is another enumerable that does literally the exact same thing as map. The method so cool, it was called twice.</p>
+		<p>Now so far we've just seen what map does, but when would you actually want to use this? Well, any time you want to change a lot of data at the same time map is useful. Maybe you have a list of names that you got from some form and some people forgot to capitalize their first names? Using #map and #capitalize could easily fix this. If you had an array of numbers but wanted them as strings #map and #to_i could quickly give you the desired result. Overall, map is a great way to manipulate your data with clean, simple code.</p>
+		<p>Sources:
+		<ul>
+		<li><a href="http://en.wikipedia.org/wiki/List_of_The_Fresh_Prince_of_Bel-Air_characters">http://en.wikipedia.org/wiki/List_of_The_Fresh_Prince_of_Bel-Air_characters</a></li>
+		</ul></p>
+
