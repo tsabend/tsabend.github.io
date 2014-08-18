@@ -11,7 +11,8 @@
 }
 .nav a {
   color: white;
-  font-size: 21px;
+  font-family: JosefinSlab;
+  font-size: 25px;
   font-weight: bold;
   padding: 14px 10px;
   text-transform: uppercase;
@@ -31,7 +32,17 @@
 .hometext{
 color:#00c7d2;
 background-color: #ffd900;
+padding-bottom: 20px;
 }	
+
+.hometext h3 {
+	font-family: PermanentMarker;
+	font-size: 25px;
+}
+.hometext p {
+	color:  #333333;
+	font-family: JosefinSlab;
+}
 
 .spacer {
 	background-color: #333333;
