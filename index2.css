@@ -11,7 +11,7 @@
 }
 .nav a {
   color: white;
-  font-family: JosefinSlab;
+  font-family: Ubuntu;
   font-size: 25px;
   font-weight: bold;
   padding: 14px 10px;
@@ -36,7 +36,7 @@ padding-bottom: 20px;
 }	
 
 .hometext h3 {
-	font-family: JosefinSlab;
+	font-family: Ubuntu;
 	font-size: 25px;
 }
 .hometext p {
