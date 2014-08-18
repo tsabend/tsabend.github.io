@@ -1,0 +1,90 @@
+.jumbotron {
+	background-image: url("images/homepage_background_v9.jpg");
+	height: 500px;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	margin-bottom: 0px;
+
+}
+.nav {
+	background-color: #333333;
+}
+.nav a {
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav a:hover {
+	color:#5a5a5a;
+}
+
+
+
+
+.hometext{
+color:#00c7d2;
+background-color: #ffd900;
+}	
+
+.spacer {
+	background-color: #333333;
+	height: 40px;
+	width: 100%;
+
+}
+
+.linkbar {
+	background-color: #333333;
+}
+
+.logo a {
+	margin-left: 12%;
+	margin-top: 5px;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-size: 100%;
+}
+
+
+#instagram {
+	background-image: url("http://www.andycolemagic.co.uk/communities/5/004/012/702/315//images/4611056997.gif");
+}
+#twitter {
+	background-image: url("https://cdn1.iconfinder.com/data/icons/simple-icons/4096/twitter-4096-black.png");
+}
+
+#github {
+	background-color: black;
+}
+
+#linkedin {
+	background-color: red;
+}
+
+
+#myspace {
+	background-color: black;
+}
+
+#friendster {
+	background-color: red;
+}
+
+
+.logo a:hover {
+	background-color: white;
+	opacity: .7;
+} 
+
+
+.hometext h3 {
+	text-align: center;
+}
