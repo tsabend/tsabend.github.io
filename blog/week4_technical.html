@@ -1,0 +1,116 @@
+<DOCTYPE!html>
+
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Rock+Salt|Open+Sans|Roboto|Goudy+Bookletter+1911|' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="bootstrap.css">   
+	<link rel="stylesheet" href="index.css">
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+<script type="text/javascript" src = "app.js"></script>
+	<title>|| Thomas Abend ||</title>
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+	<div class="container">
+	<div class="bar">
+		<ul class="pull-left">
+			<li><a href="http://tsabend.github.io/index.html">Home</a></li> 
+			<li><a href="http://tsabend.github.io/projects.html">Projects</a></li>
+		</ul>
+		
+		
+		<ul class="pull-right">
+			<li><a href="http://tsabend.github.io/blog-posts/week2_technical.html">Technical Blog</a></li> 
+			<li><a href="http://tsabend.github.io/blog-posts/week1_cultural.html">Cultural Blog</a></li> 	
+		</ul>
+		</div>
+		
+	</div>
+</div>
+
+
+
+<article>
+	<div class="container-fluid side-color">
+		<div class="row">
+			<div class="col-md-3">
+		<div class="thumbnail">
+        <img src="images/jetpack.jpg">
+        <div class="caption">
+		<h3>Technical Blog</h3>
+		<p>Check out my technical blog where you can find informational posts about various Ruby mehods and programming paradigms. The blogs are a way for me to internalize what I've learned and share some of my growing knowledge with
+		others. The best way to learn something is to teach it.</p>
+        
+      </div>
+    </div>
+			</div>
+
+			<div class="blog col-md-6">
+				<h1>#map, #awesome</h1>
+				<h5>10:42 AM -- 8/9/14</h5>
+				<h5>Thomas Abend</h5>
+				<p>This week at DBC we've been diving back into the world of ruby. One of the features that I like about ruby is it's variety of built in enumerable methods. These functions like inject, select, map are really useful when trying to manipulate and use arrays and hashes but can be called on any class that has an #each method. In general there isn't anything that these functions do that you couldn't do with an each iterator or even a "for loop" and some extra code, but having the functionality built into these methods makes it much easier to put things together quickly and simply.</p>
+		<p>The #map method is one of the most useful enumerators. Map works by taking a block of code and running that block on each object in your collection. It then outputs a new collection.</p>
+		<p> For example, if you had an array of numbers you could perform math on each of the elements of that array with map.</p>
+		<img src="old-blog-posts/imgs/week4_1.png">
+		<p>This isn't limited to numbers. Let's say you had an array of your favorite characters from the Fresh Prince. Suddenly you realized you forgot their last names! Map to the rescue:</p>
+		<img src="old-blog-posts/imgs/week4_2.png">
+		<p>#map also has a destructive version of the method, so calling best_characters.map! would not only return the corrected array, it would modify the best_characters to include the corrected names.</p>
+		<p>Also interesting is that map has another name: collect. Collect is another enumerable that does literally the exact same thing as map. The method so cool, it was called twice.</p>
+		<p>Now so far we've just seen what map does, but when would you actually want to use this? Well, any time you want to change a lot of data at the same time map is useful. Maybe you have a list of names that you got from some form and some people forgot to capitalize their first names? Using #map and #capitalize could easily fix this. If you had an array of numbers but wanted them as strings #map and #to_i could quickly give you the desired result. Overall, map is a great way to manipulate your data with clean, simple code.</p>
+		<p>Sources:
+		<ul>
+		<li><a href="http://en.wikipedia.org/wiki/List_of_The_Fresh_Prince_of_Bel-Air_characters">http://en.wikipedia.org/wiki/List_of_The_Fresh_Prince_of_Bel-Air_characters</a></li>
+		</ul></p>
+			</div>
+
+<div class="col-md-3">
+	<div class ="sidebar-module other-blog">
+		<h3>Technical Entries</h3>
+		<br>
+		<hr>
+		<ul>
+			<li><a href="http://tsabend.github.io/blog/week1_technical">Week 1: Website Design</a></li>
+			<li><a href="http://tsabend.github.io/blog/week2_technical">Week 2: Classes vs. IDs</a></li>
+			<li><a href="http://tsabend.github.io/blog/week3_technical">Week 3: Why Javascript?</a></li>
+			<li><a href="http://tsabend.github.io/blog/week4_technical">Week 4: #map, #awesome</a></li>
+			<li><a href="http://tsabend.github.io/blog/week5_technical">Week 5: Feeling Classy</a></li>
+			<li><a href="http://tsabend.github.io/blog/week6_technical">Week 6: OOPs</a></li>
+		</ul>
+	</div>
+	</div>
+	<div class ="sidebar-module current-blog">
+		<h3>Cultural Entries</h3>
+		<br>
+		<hr>
+		<ul>
+			<li><a href="http://tsabend.github.io/blog/week1_cultural">Week 1: Let's Get Cookin'</a></li>
+			<li><a href="http://tsabend.github.io/blog/week3_cultural">Week 3: Learning Styles</a></li>
+			<li><a href="http://tsabend.github.io/blog/week4_cultural">Week 4: Where is my Jetpack?</a></li>
+			<li><a href="http://tsabend.github.io/blog/week5_cultural">Week 5: Pairing Is...</a></li>
+			<li><a href="http://tsabend.github.io/blog/week6_cultural">Week 6: Stereotype Threats</a></li>
+		</ul>
+	</div>
+	
+	</div>
+	</div>
+</article>
+
+<div class="linkbar">
+	<div class="container">
+		<div class ="row text-center">
+		<div class="logo">
+			<a id="email" href="mailto: tsabend@gmail.com" target="_blank"></a>
+			<a id="github" href="http://github.com/tsabend" target="_blank"></a>
+			<a id="linkedin" href="http://www.linkedin.com/in/thomasabend" target="_blank"></a>
+			<a id="twitter" href="https://twitter.com/tsabend" target="_blank"></a>
+			<a id="instagram" href="http://instagram.com/tsabend" target="_blank"></a>
+			<a id="music" href="https://myspace.com/viciousmixtapes/music/songs" target="_blank"></a>
+		</div>
+	</div>
+	</div>
+</div>
+
+</body>

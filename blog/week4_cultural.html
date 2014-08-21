@@ -1,0 +1,112 @@
+<DOCTYPE!html>
+
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Rock+Salt|Open+Sans|Roboto|Goudy+Bookletter+1911|' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="bootstrap.css">   
+	<link rel="stylesheet" href="index.css">
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+<script type="text/javascript" src = "app.js"></script>
+	<title>|| Thomas Abend ||</title>
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+	<div class="container">
+	<div class="bar">
+		<ul class="pull-left">
+			<li><a href="http://tsabend.github.io/index.html">Home</a></li> 
+			<li><a href="http://tsabend.github.io/projects.html">Projects</a></li>
+		</ul>
+		
+		
+		<ul class="pull-right">
+			<li><a href="http://tsabend.github.io/technical.html">Technical Blog</a></li> 
+			<li><a href="http://tsabend.github.io/cultural.html">Cultural Blog</a></li> 	
+		</ul>
+		</div>
+		
+	</div>
+</div>
+
+
+
+<article>
+	<div class="container-fluid side-color">
+		<div class="row">
+			<div class="col-md-3">
+		<div class="thumbnail">
+        <img src="images/turk.png">
+        <div class="caption">
+        <h3>Cultural Blog</h3>
+        <p><p>In my cultural blog you can find my musings on all things technical, from open source software to the future of
+		speech recognition.</p><p> This is also a place where I'll reflect on the process of DBC and think about topics like peer programming, feedback and what becoming a programmer really means.</p></p>
+        
+      </div>
+    </div>
+			</div>
+
+			<div class="blog col-md-6">
+				<h1>Speech Recognition</h1>
+				<h5>9:42 AM -- 8/9/14</h5>
+				<h5>Thomas Abend</h5>
+				<p>Many cultural critics and experts within the tech industry like Peter Thiel have bemoaned the lack of truly radical advances in technology. Sure social media is nice, but it's hardly The Jetsons. Where's my hovercar?</p>
+<p>One of the technologies that has most captivated the imagination of science fiction is the computer that you talk to. From HAL to C-3PO, the idea that computers will interact with us based on what we say is ingrained into our image of the future. Apple's SIRI and Google's "OK, Google" functionality are mimics of this, but anyone who's used them knows that they really more like gimmicks. Despite the state of current technology, the upshot is real. Imagine traveling with an electronic translator or shouting at your house to turn up the heat from the relative comfort of your bed on a cold winter's day. Or just imagine that the speech recognition software at the customer support hotline doesn't ask you "Did you say: yes?" a million times (a request to which you can only helplessly reply "yes"). Will speech recognition technology ever be good enough to fulfill our visions of a future filled with robots?</p>
+<p>To fully understand the depth behind the issues with SR (speech recognition) you first need to understand how the current solutions work. First a human speaks which gets picked up by an analog-digital converter (ADC), basically a mic, which samples the audio signal so it can be analyzed. Typically the audio will be compressed to a more uniform volume and then analysis is usually done by way of a fast-Fourier transform (FFT), which takes little snapshots of the audio signal every 1/100th of a second. FFTs can be used to match the audio signal with a library of existing word sounds usually centered around things like phonemes and plosives, the little sounds that we use to make up work.</p>
+<p>Wow that sounds like magic, huh? Well the truth is it doesn't work very well. Because pronunciation and the conditions of the audio sample (think background noises) vary greatly, the best the program can really do is generate a probability. The statistical modeler used by most SRs today is called the Hidden Markov Model. This basically says how likely it is that a given phoneme is being spoken but it has to figure out where each phoneme started and ended, deal with the fact that we pronounce letters differently in different contexts, and account for background noise. I don't know if I've done enough to stress how incredibly difficult it is to be accurate using this method up to this point but let's just say super freaking difficult and requiring quite a bit of CPU strength.</p>
+<p>At this point, there are two solutions to improving your SRs output and many programs might take a bit of each. One is to limit the available vocabulary. If you limit the vocabulary you are looking for to just two words, chances are that you can differentiate between the two with a high degree of accuracy. Certainly higher than when you're just accepting any sound. More generally the tactic of limiting vocabulary sizes is called called Context Free Grammar. Using vocabulary banks can vastly improve outcomes by looking at statistical likelihood and with machine learning you can create an ever improving database of a words probability of being used.</p>
+<p>The other option is to have a system that you train to get better at recognizing your voice. By calibrating the system to your voice, you make it easier to match audio input to phonemes and improve the results of your SR.</p>
+<p>To sum up, here are some of the difficulties an SR faces:<ul><li>There are a ton of words (the average human's vocabulary is over 100,000 words)</li><li>People speak them differently</li><li>People don't always speak fluidly</li><li>Background Noise</li><li>Some letters are hard to distinguish</li></ul></p>
+	<p>Just look back at the previous 5 paragraphs and look how many fancy acronyms there were. This stuff is really hard. The fact that we're able to take our speech break it into 1/100ths of a part per second and reconstruct that into sentences is borderline magic. The reason so many people are frustrated is that it seems almost good enough to work and that it's been around for a while. We've gotten close enough to a working SR that people ridicule SIRI when she doesn't know if you want to call "Mom" or "Bob" when you scream at her in a crowded nightclub. The idea that the technology is within reach but doesn't seem to be improving (SRs have been around since the early 80's) makes it all the more painful when it doesn't work.</p><p>Although the "when" remains uncertain, quality SR still seems like an inevitability. A main reason for the apparent sluggishness in progress is that researchers are constantly increasing difficulty of the tasks that SRs are being asked to do by expanding their vocabularies. One recent trend that seems to be accelerating the progress of SR is the growing use of machine learning methods to analyze and catalog existing speech data. That combined with the increasing power of computers is moving SR closer to its full potential.</p>
+<p>Sources<ul><li><a href="http://electronics.howstuffworks.com/gadgets/high-tech-gadgets/speech-recognition1.htm">http://electronics.howstuffworks.com/gadgets/high-tech-gadgets/speech-recognition1.htm</a></li><li><a href="http://www.newyorker.com/magazine/2011/11/28/no-death-no-taxes">http://www.newyorker.com/magazine/2011/11/28/no-death-no-taxes</a></li><li><a href="http://www.cnn.com/2013/08/20/opinion/wheeler-voice-recognition/">http://www.cnn.com/2013/08/20/opinion/wheeler-voice-recognition/</a></li><li><a href="http://project.uet.itgo.com/speech.htm">http://project.uet.itgo.com/speech.htm</a></li><li><a href="http://en.wikipedia.org/wiki/Speech_recognition">http://en.wikipedia.org/wiki/Speech_recognition</a></li></ul></p>
+
+			</div>
+
+<div class="col-md-3">
+	<div class ="sidebar-module current-blog">
+		<h3>Cultural Entries</h3>
+		<br>
+		<hr>
+		<ul>
+			<li><a href="http://tsabend.github.io/blog/week1_cultural">Week 1: Let's Get Cookin'</a></li>
+			<li><a href="http://tsabend.github.io/blog/week3_cultural">Week 3: Learning Styles</a></li>
+			<li><a href="http://tsabend.github.io/blog/week4_cultural">Week 4: Where is my Jetpack?</a></li>
+			<li><a href="http://tsabend.github.io/blog/week5_cultural">Week 5: Pairing Is...</a></li>
+			<li><a href="http://tsabend.github.io/blog/week6_cultural">Week 6: Stereotype Threats</a></li>
+		</ul>
+	</div>
+	<div class ="sidebar-module other-blog">
+		<h3>Technical Entries</h3>
+		<br>
+		<hr>
+		<ul>
+			<li><a href="http://tsabend.github.io/blog/week1_technical">Week 1: Website Design</a></li>
+			<li><a href="http://tsabend.github.io/blog/week2_technical">Week 2: Classes vs. IDs</a></li>
+			<li><a href="http://tsabend.github.io/blog/week3_technical">Week 3: Why Javascript?</a></li>
+			<li><a href="http://tsabend.github.io/blog/week4_technical">Week 4: #map, #awesome</a></li>
+			<li><a href="http://tsabend.github.io/blog/week5_technical">Week 5: Feeling Classy</a></li>
+			<li><a href="http://tsabend.github.io/blog/week6_technical">Week 6: OOPs</a></li>
+		</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+</article>
+
+<div class="linkbar">
+	<div class="container">
+		<div class ="row text-center">
+		<div class="logo">
+			<a id="email" href="mailto: tsabend@gmail.com" target="_blank"></a>
+			<a id="github" href="http://github.com/tsabend" target="_blank"></a>
+			<a id="linkedin" href="http://www.linkedin.com/in/thomasabend" target="_blank"></a>
+			<a id="twitter" href="https://twitter.com/tsabend" target="_blank"></a>
+			<a id="instagram" href="http://instagram.com/tsabend" target="_blank"></a>
+			<a id="music" href="https://myspace.com/viciousmixtapes/music/songs" target="_blank"></a>
+		</div>
+	</div>
+	</div>
+</div>
+
+</body>

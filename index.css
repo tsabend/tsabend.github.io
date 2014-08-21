@@ -1,296 +1,221 @@
-h1 {
-	font-family: sans-serif;
-	font-weight: bold;
-	color: white;
-
+article {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
-
-h2 {
-	font-family: sans-serif;
-	color: white;
-
+.bgpic {
+	padding-top: 50px;
+	height: auto;
 }
-
-p {
-	font-family: serif;
-	font-size: 1.5em;
-	color: black;
-	line-height: 1.1em;
-}
-
-body {
-	margin: 0 auto;
-}
-
-#photoheader {
+.bgpic img {
 	width: 100%;
-	height:400px;
-	background-image: url("images/photob.JPG");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	padding: 0;
-	overflow: hidden;
+	top: 0;
+	left: 0;
+	}
+
+.navbar {
+	background-color: #333333;
+	opacity: .96;
+	padding: 4px;
+}
+.navbar a {
+  color: #ffd900;
+  font-family: 'Goudy Bookletter 1911';
+  font-size: 24px;
+  font-weight: bold;
+  padding: 14px 14px;
+  text-transform: uppercase;
 }
 
-#phototext {
-	position: absolute;
-	margin-top: 150px;
+.navbar li {
+	display: inline;
+}
+
+.navbar a:hover {
+	color:#5a5a5a;
+	text-decoration: none;
+}
+
+.spacer {
+	background-color: #333333;
+	height: 40px;
 	width: 100%;
-	text-align: center;
+
 }
 
-#phototext h1 {
-	font-size: 50px;
-}
-
-#phototext h2 {
-	font-size: 30px;
-}
-
-#container {
+.linkbar {
 	background-color: #333333;
 }
 
-article {
-	width: 60%;
-	margin-left: 20%;
-	margin-right: 20%;
+.logo a {
+	margin-left: 6%;
+	margin-right: 6%;
+	margin-top: 5px;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-size: 100%;
+}
+
+
+#instagram {
+	background-image: url("http://www.andycolemagic.co.uk/communities/5/004/012/702/315//images/4611056997.gif");
+}
+#twitter {
+	background-image: url("https://cdn1.iconfinder.com/data/icons/simple-icons/4096/twitter-4096-black.png");
+}
+
+#github {
+	background-image: url("https://peer5.com/website/img/soc_github.png")
+}
+#linkedin {
+	background-image: url("http://www2.psd100.com/ppp/2013/09/2601/linkedin-icon-0926005838.png");
+	background-image: url("https://cdn1.iconfinder.com/data/icons/simple-icons/2048/linkedin-2048-black.png");
+}
+
+
+#email {
+	
+	background-image: url("http://www.definearchitecture.co/images/email-icon.png");
+	background-repeat: no-repeat;
+}
+
+#music {
+	background-image: url("http://www.iconsdb.com/icons/preview/black/soundcloud-2-xxl.png")
+}
+
+
+.logo a:hover {
+	background-color: #ffd900;
+	background-color: #00c7d2;
+	opacity: .7;
+} 
+
+
+.blog {
 	background-color: white;
 }
-
-article h1 {
-	font-size: 2em;
+.blog h1 {
 	text-align: center;
-	color: #00c1ca;
+	font-family: PermanentMarker;
+	font-size: 110px;
+	font-weight: bold;
+	color: #00c7d2;
 }
-
-article p {
-	padding: 2%;
-}
-
-
-article ul {
-	list-style-type: square;
-	margin-left: 36%;
-}
-
-article h3 {
+.blog h5 {
 	text-align: center;
-	color: #00c1ca;
-	font-size: 1.5em;
+	color:   #ffd900;
+	font-family: 'Rock Salt';
+	font-weight: bold;
+	font-size: 15px;
 }
 
-article ul a {
-	color:#00c7d2;
-	font-family: sans-serif;
-	text-decoration: none;
-	font-size: 19px;	
+.blog p {
+	color:  #333333;
+	font-family: 'Goudy Bookletter 1911';
+	font-size: 16px;
+	padding: 0 5%;
+	line-height: 1.45em;
 }
 
-article ul a:hover {
-	text-decoration: underline;
+.sidebar-module {
+	height: auto;
+ 	border-radius: 2px;
+ 	padding: 10px 10px;
+ 	background-color: white;
+ 	margin-left: 30px;
+}
+
+.sidebar-module ul {
+	padding: 5px 5px;
 	
+}
+.sidebar-module h3 {
+	text-align: center;
+	font-family: 'Rock Salt';
+	color: #ffd900;
+}
+.sidebar-module ul li a {
+	text-decoration: none;
+	color: #333333;
+	font-family: Arial;
+	line-height: 1.45em;
+	font-size: 14px;
+}
+
+.current-blog {
+	margin-top: 200px;
+}
+.other-blog {
+	margin-top: -5px;	
+}
+
+.hometext{
+background-color: #ffd900;
+padding-bottom: 20px;
+}	
+
+.hometext h3 {
+	color:#00c7d2;
+	font-family: 'Permanent Marker';
+	font-weight: bold;
+	font-size: 30px;
+	color:  #333333;
+	text-align: center;
+
+}
+.hometext p {
+	color:  #333333;
+	font-family: 'Goudy Bookletter 1911';
+	font-size: 18px;
+
+}
+
+.thumbnail {
+	margin-top: 200px;
+	position: relative;
+	font-family: Arial;
+	border-radius: 2px;
+	margin-left: 12%;
+	margin-right: 12%;
+}
+
+.thumbnail h3 {
+	text-align: center;
+	font-family: 'Rock Salt';
+	font-weight: bold;
 	color: #ffd900;
 }
 
-header {
-	text-align: center;
-	background-color: #ffd900;
-	height: 50px;
+.side-color {
+	background-color: #333333;
 }
 
-header ul {
-	list-style-type: none;
-	padding-top: 15px;
-	width: 78%;
-	margin-left: 11%;
-	margin-right: 11%;
-}
+/*MediaQueries*/
 
-header ul li {
-	display: inline;
-	padding: 12px;
-}
-
-header ul a {
-	color:#00c7d2;
-	font-family: sans-serif;
-	text-decoration: none;
-	font-size: 19px;	
-}
-
-header ul a:hover {
-	text-decoration: underline;
-	
-	color: white;
-}
-
-.lefthead {
-	margin-left: 5px;
-	float:left;
-}
-
-.lefthead a {
-	margin-top: 5px;
-	display: block;
-	width: 40px;
-	height: 40px;
-	background-image: url("http://www.andycolemagic.co.uk/communities/5/004/012/702/315//images/4611056997.gif");
-	background-size: 100%;
-}
-
-.righthead {
-	margin-right: 5px;
-	float: right;
-}
-
-.righthead a {
-	margin-top: -28px;
-	display: block;
-	width: 40px;
-	height: 40px;
-	background-image: url("https://cdn1.iconfinder.com/data/icons/simple-icons/4096/twitter-4096-black.png");
-	background-size: 100%;
-	
-}
-
-.righthead a:hover {
-	background-color: white;
-	opacity: .7;
-} 
-
-.lefthead a:hover {
-	background-color: white;
-	opacity: .7;
-} 
-
-#photos1 {
-width: 100%;
-
-}
-
-#photos2 {
-	margin-top: 10px;
-	padding-bottom: 10px;
-	width: 100%;
-}
-
-#photos1 img {
-	max-width: 47%;
-	height: auto;
-	margin-left: 1.5%;
-	border: 1px black solid;
-}
-
-#photos2 img {
-	max-width: 31%;
-	height: auto;
-	margin-left: 1.3%;
-	border: 1px black solid;
-}
-
-footer {
-	background-color: #ffd900;
-	width: 100%;
-	height: 50px;
-	clear: both;
-}
-
-footer p {
-	font-size:12px;
-	margin-top: 20px;
-	float: right;
-}
-
-@media screen and (max-width: 780px) {
-
-
-#phototext {
-	margin-top: 150px;
-}
-	#phototext h1 {
-		font-size: 40px;
+@media screen and (max-width: 1000px) {
+	.navbar a {
+		font-size: 18px;
 	}
-		#phototext h2 {
-		font-size: 20px;
+	.spacer {
+		height: 20px;
 	}
 
-header a {
-	font-size: 14px;	
 }
 
-header ul li {
-	padding: 4px;
-}
-
-}
-
-
-@media screen and (max-width: 550px) {
-	#photoheader{
-		height:200px;
+@media screen and (max-width: 700px) {
+.navbar a {
+		font-size: 12px;
+		padding: 8px 8px;
 	}
 
-	#phototext {
-	margin-top: 50px;
-	
+}
+
+@media screen and (max-width: 520px) {
+.navbar a {
+		font-size: 11px;
+		padding: 2px 2px;
 	}
-
-	#photos {
-		width: 240px;
-		margin-left: 25%;
+.navbar {
+	height: 10px;
+}
 	}
-
-	#container {
-
-	}
-
-	.lefthead {
-	display:none;
-}
-
-	.righthead {
-	display: none;
-}
-
-article {
-	width: 100%;
-	margin-left: 0%;
-	margin-right: 0%;
-	
-}
-
-article p {
-	font-size: 	1em;
-}
-
-header ul a {
-	font-size: 12px;	
-}
-
-header ul li {
-	padding: 2px;
-}
-
-#photos1 img {
-	max-width: 80%;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-left: 8%;
-}
-
-#photos2 {
-	margin-top: 0px;
-}
-
-#photos2 img {
-	max-width: 80%;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-left: 8%;
-}
-
-}
-
-
