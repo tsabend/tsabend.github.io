@@ -98,9 +98,19 @@ article {
 .blog h1 {
 	text-align: center;
 	font-family: PermanentMarker;
-	font-size: 110px;
+	font-size: 72px;
 	font-weight: bold;
 	color: #00c7d2;
+}
+
+.blog h3 {
+	color:  black;
+	font-family: 'Goudy Bookletter 1911';
+	font-size: 18px;
+	padding: 0 5%;
+	line-height: 1.45em;
+	text-align: center;
+	font-weight: bolder;
 }
 .blog h5 {
 	text-align: center;
@@ -192,8 +202,8 @@ padding-bottom: 20px;
 }
 
 .contentimage img {
-	height: 240px;
-	width: 360px;
+	height: 180px;
+	width: 280px;
 	border: solid 1px #cbcaca; 
 }
 
@@ -201,9 +211,16 @@ padding-bottom: 20px;
 	margin: 0 auto;
 	margin-left: 22%;
 }
+
+.codepic {
+	margin: 0 auto;
+	margin-left: 22%;
+}
+
+.bottom-nav {}
 /*MediaQueries*/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 991px) {
 	.navbar a {
 		font-size: 18px;
 	}
@@ -211,6 +228,12 @@ padding-bottom: 20px;
 		height: 20px;
 	}
 
+.sidebar-module {
+	display: none;
+}
+.thumbnail {
+	display: none;
+}
 }
 
 @media screen and (max-width: 700px) {
@@ -218,6 +241,13 @@ padding-bottom: 20px;
 		font-size: 12px;
 		padding: 8px 8px;
 	}
+
+.sidebar-module {
+	display: none;
+}
+.thumbnail {
+	display: none;
+}
 
 }
 
@@ -229,4 +259,5 @@ padding-bottom: 20px;
 .navbar {
 	height: 10px;
 }
+
 	}
