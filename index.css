@@ -190,6 +190,11 @@ padding-bottom: 20px;
 	background-color: #333333;
 }
 
+.contentimage img {
+	height: 240px;
+	width: 360px;
+	border: solid 1px #cbcaca; 
+}
 /*MediaQueries*/
 
 @media screen and (max-width: 1000px) {
