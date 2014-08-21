@@ -249,6 +249,11 @@ padding-bottom: 20px;
 	display: none;
 }
 
+.contentimage {
+	margin: 0 auto;
+	margin-left: 8%;
+}
+
 }
 
 @media screen and (max-width: 520px) {
