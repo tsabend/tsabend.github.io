@@ -146,7 +146,7 @@ article {
 	color: #ffd900;
 }
 .sidebar-module ul li a {
-	text-decoration: none;
+	text-decoration: underline;
 	color: #333333;
 	font-family: Arial;
 	line-height: 1.45em;
@@ -219,7 +219,12 @@ padding-bottom: 20px;
 	overflow: hidden;
 }
 
-.bottom-nav {}
+.prettyprint {
+	border-radius: 0px;
+	margin: 0 5%;
+
+}
+
 /*MediaQueries*/
 
 @media screen and (max-width: 991px) {
