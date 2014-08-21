@@ -210,11 +210,13 @@ padding-bottom: 20px;
 .contentimage {
 	margin: 0 auto;
 	margin-left: 28%;
+	overflow: hidden;
 }
 
 .codepic {
 	margin: 0 auto;
 	margin-left: 22%;
+	overflow: hidden;
 }
 
 .bottom-nav {}
