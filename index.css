@@ -97,7 +97,7 @@ article {
 }
 .blog h1 {
 	text-align: center;
-	font-family: PermanentMarker;
+	font-family: 'Permanent Marker';
 	font-size: 72px;
 	font-weight: bold;
 	color: #00c7d2;
@@ -106,11 +106,11 @@ article {
 .blog h3 {
 	color:  black;
 	font-family: 'Goudy Bookletter 1911';
-	font-size: 18px;
+	font-size: 20px;
 	padding: 0 5%;
 	line-height: 1.45em;
 	text-align: center;
-	font-weight: bolder;
+	font-weight: bold;
 }
 .blog h5 {
 	text-align: center;
@@ -118,6 +118,8 @@ article {
 	font-family: 'Rock Salt';
 	font-weight: bold;
 	font-size: 15px;
+	padding: 2px;
+	line-height: 1.45em;
 }
 
 .blog p {
