@@ -243,6 +243,9 @@ padding-bottom: 20px;
 .thumbnail {
 	display: none;
 }
+.only {
+	display: block;
+}
 }
 
 @media screen and (max-width: 700px) {
@@ -258,10 +261,14 @@ padding-bottom: 20px;
 	display: none;
 }
 
-
 }
 .blog h1 {
 	font-size: 65px;
+}
+.only {
+	display: block;
+	margin: 1% 1%;
+}
 }
 @media screen and (max-width: 520px) {
 .navbar a {
@@ -278,5 +285,8 @@ padding-bottom: 20px;
 }
 .blog h1 {
 	font-size: 50px;
+}
+.only {
+	display: block;
 }
 	}
