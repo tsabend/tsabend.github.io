@@ -125,7 +125,7 @@ article {
 .blog p {
 	color:  #333333;
 	font-family: 'Goudy Bookletter 1911';
-	font-size: 16px;
+	font-size: 18px;
 	padding: 0 5%;
 	line-height: 1.45em;
 }
@@ -260,7 +260,8 @@ padding-bottom: 20px;
 .thumbnail {
 	display: none;
 }
-
+.blog p {
+	font-size: 20px;
 }
 .blog h1 {
 	font-size: 65px;
@@ -282,6 +283,10 @@ padding-bottom: 20px;
 .contentimage {
 	margin: 0 auto;
 	margin-left:10%;
+}
+
+.blog p {
+	font-size: 24px;
 }
 .blog h1 {
 	font-size: 50px;
