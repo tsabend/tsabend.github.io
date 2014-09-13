@@ -11,6 +11,7 @@ window.onload = function() {
             displayGroceryList(myGroceryList);
             document.getElementById("itemText").value = ("");
         }
+    
     }
 }
     
