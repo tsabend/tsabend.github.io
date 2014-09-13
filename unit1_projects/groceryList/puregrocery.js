@@ -97,7 +97,7 @@ function GroceryList() {
     this.add = function(stuffToAdd){
         stuffToAdd = stuffToAdd.split(", ")
         for(var i = 0; i < stuffToAdd.length; i++ ) {
-            
+            stuffToAdd[i] = stuffToAdd[i].toLowerCase();
             if(stuffToAdd[i] in this.list) {
                 this.list[stuffToAdd[i]].quantity += 1;   
             }
