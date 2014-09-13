@@ -140,6 +140,7 @@ article {
 
 .sidebar-module ul {
 	padding: 5px 5px;
+	list-style-type: none;
 	
 }
 .sidebar-module h3 {
