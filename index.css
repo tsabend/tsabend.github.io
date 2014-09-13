@@ -86,7 +86,6 @@ article {
 
 
 .logo a:hover {
-	background-color: #ffd900;
 	background-color: #00c7d2;
 	opacity: .7;
 } 
@@ -154,6 +153,11 @@ article {
 	font-family: Arial;
 	line-height: 1.45em;
 	font-size: 14px;
+}
+
+.sidebar-module ul li a:hover {
+	background-color: #00c7d2;
+	opacity: .7;
 }
 
 .current-blog {
