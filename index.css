@@ -4,6 +4,7 @@ article {
 	background-color: #ffd900;
 }
 .bgpic {
+	padding-top: 50px;
 	height: auto;
 }
 .bgpic img {
@@ -12,12 +13,12 @@ article {
 	left: 0;
 	}
 
-nav {
+.navbar {
 	background-color: #333333;
 	opacity: .96;
 	padding: 4px;
 }
-nav a {
+.navbar a {
   color: #ffd900;
   font-family: 'Goudy Bookletter 1911';
   font-size: 24px;
@@ -25,7 +26,12 @@ nav a {
   padding: 14px 14px;
   text-transform: uppercase;
 }
-nav a:hover {
+
+.navbar li {
+	display: inline;
+}
+
+.navbar a:hover {
 	color:#5a5a5a;
 	text-decoration: none;
 }
@@ -34,6 +40,7 @@ nav a:hover {
 	background-color: #333333;
 	height: 40px;
 	width: 100%;
+
 }
 
 .linkbar {
@@ -82,6 +89,7 @@ nav a:hover {
 	background-color: #00c7d2;
 	opacity: .7;
 } 
+
 
 .blog {
 	background-color: white;
@@ -269,13 +277,14 @@ padding-bottom: 20px;
 }
 }
 @media screen and (max-width: 520px) {
-nav a {
-		font-size: 18px;
+.navbar a {
+		font-size: 11px;
 		padding: 2px 2px;
 	}
-/*nav {
+.navbar {
 	height: 10px;
-}*/
+}
+
 .contentimage {
 	margin: 0 auto;
 	margin-left:10%;
