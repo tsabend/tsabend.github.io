@@ -4,7 +4,7 @@
 .flip-container:hover .flipper, .flip-container.hover .flipper {
 	transform: rotateY(180deg);
 }
-.flip-container, .front, .back {
+.flip-container, .front, .back, .me {
 	width:288px;
 	height:288px;
 	border-radius:50%;
@@ -52,29 +52,17 @@
 	background-color: #ffd900;
 }
 
-.bgpic {
-	height: auto;
-}
-.bgpic img {
-	width: 100%;
-	top: 0;
-	left: 0;
-}
 
 .spacer {
 	background-color: #333333;
-	width: 100%;
 	height: auto;
 	color: white;
 }
 
-.logo a {
-	margin-left: 6%;
-	margin-right: 6%;
-	margin-top: 5px;
+.text-info {
 	display: inline-block;
-	width: 40px;
-	height: 40px;
-	background-size: 100%;
 }
 
+.hidden {
+	display: none;
+}

@@ -1,6 +1,6 @@
-//$(document).ready(function(){ 
-//	$("div").hover(function() {					   
-//	$(".bar").toggleClass("description");
-//	});	
-	
-//});
+$(document).ready(function(){ 
+	$('.flip-container').click(function() {
+		var text = $('.' + $(this).data('text'))
+		text.slideToggle('slow')
+	})
+});

@@ -7,7 +7,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Rock+Salt|Permanent+Marker|Goudy+Bookletter+1911|' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="index.css">
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
-<script type="text/javascript" src = "app.js"></script>
+<script type="text/javascript" src="app.js"></script>
 	<title>|| Thomas Abend ||</title>
 </head>
 
@@ -20,10 +20,33 @@
 
 <div class="clearfix icon-container">
 	
-	<div class="col lg-col-4 py2 px3">
-			<img src="images/homepage_background_v9.jpg"></img>
+	<div class="col sm-col-3">
+		<img class="left me" src="images/balloon.png"></img>
 	</div>
 
+	<div class="col sm-col-6">
+	<div class="text-info">
+
+		<div class="about-me hidden">
+			<h3>ABOUT ME</h3>
+			<p>I am a former teacher turned web developer. I'm originally from Massachusetts and am now living in Brooklyn. I have spent the past four years working as an 8th grade English teacher in the Mississippi Delta and Newark, New Jersey. I'm transitioning into programming with an eye on education technology.
+
+			<p>Besides coding, I enjoy playing music, cooking, and fencing.</p>
+		</div>
+
+		<div class="projects hidden">
+			<h3>PROJECTS</h3>
+			<p>Bibliotate: A literacy app that let's students comment directly in the text.</p>
+			<p>VYNC: A video messaging app that lets users create chains of videos.</p>
+		</div>
+
+		<div class="resume hidden">
+			<h3>ABOUT ME</h3>
+			<p>I am a person</p>
+		</div>
+	</div>
+
+</div>
 </div>
 
 <div class = "spacer">
@@ -32,7 +55,7 @@
 
 <div class="clearfix icon-container px2">
 	<div class="col lg-col-4 py2 px3">
-		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div data-text="about-me" class="flip-container" ontouchstart="this.classList.toggle('hover');">
 		  <div class="flipper center">
 		    <div class="front">
 						<i class="fa fa-meh-o main-icon"></i>
@@ -45,7 +68,7 @@
 	</div>
 
 	<div class="col lg-col-4 py2 px3">
-		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div data-text="projects" class="flip-container" ontouchstart="this.classList.toggle('hover');">
 		  <div class="flipper center">
 		    <div class="front">
 						<i class="fa fa-plug main-icon"></i>
@@ -58,7 +81,7 @@
 	</div>
 
 	<div class="col lg-col-4 py2 px3">
-		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div data-text="resume" class="flip-container" ontouchstart="this.classList.toggle('hover');">
 		  <div class="flipper center">
 		    <div class="front">
 						<i class="fa fa-file-text main-icon"></i>
@@ -114,5 +137,8 @@
 </div>
 
 
+<div class = "spacer">
+	<span>THOMASABENDTHOMASABENDTHOMASABENDTHOMASABENDTHOMASABENDTHOMASABENDTHOMASABENDTHOMASABENDTHOMASABENDTHOMASABENDTHOMASABENDTHOMASABENDTHOMASABENDTHOMASABENDTHOMASABENDTHOMASABEND</span>
+</div>
 
 </body>
