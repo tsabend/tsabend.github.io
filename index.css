@@ -27,6 +27,7 @@
 	transform: rotateY(0deg);
 }
 .back {
+	background-color: #333333;
 	transform: rotateY(180deg);
 }
 
