@@ -57,6 +57,7 @@
 	background-color: #333333;
 	height: auto;
 	color: white;
+	overflow: hidden;
 }
 
 .text-info {
