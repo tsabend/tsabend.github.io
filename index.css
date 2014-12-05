@@ -68,3 +68,22 @@
 .hidden {
 	display: none;
 }
+
+.resume {
+	position: fixed;
+	width: 70%;
+	height: 90%;
+	left: 15%;
+	top: 5%;
+	z-index: 4;
+}
+
+.resume-button {
+	position: fixed;
+	height: 7%;
+	width: 5%;
+	left: 15.2%;
+	top: 5.3%;
+	z-index: 5;	
+	background-color: white;
+}
