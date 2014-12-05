@@ -1,302 +1,90 @@
-article {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-color: #ffd900;
+.flip-container {
+	perspective: 1000;
 }
-.bgpic {
-	padding-top: 50px;
-	height: auto;
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
 }
-.bgpic img {
-	width: 100%;
+.flip-container, .front, .back, .me {
+	width:288px;
+	height:288px;
+	border-radius:50%;
+}
+
+.flipper {
+	transition: 0.4s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
 	top: 0;
 	left: 0;
-	}
-
-.navbar {
-	background-color: #333333;
-	opacity: .96;
-	padding: 4px;
-}
-.navbar a {
-  color: #ffd900;
-  font-family: 'Goudy Bookletter 1911';
-  font-size: 24px;
-  font-weight: bold;
-  padding: 14px 14px;
-  text-transform: uppercase;
-}
-
-.navbar li {
-	display: inline;
-}
-
-.navbar a:hover {
-	color:#5a5a5a;
-	text-decoration: none;
-}
-
-.spacer {
-	background-color: #333333;
-	height: 40px;
-	width: 100%;
-
-}
-
-.linkbar {
-	background-color: #333333;
-}
-
-.logo a {
-	margin-left: 6%;
-	margin-right: 6%;
-	margin-top: 5px;
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	background-size: 100%;
-}
-
-
-#instagram {
-	background-image: url("http://www.andycolemagic.co.uk/communities/5/004/012/702/315//images/4611056997.gif");
-}
-#twitter {
-	background-image: url("https://cdn1.iconfinder.com/data/icons/simple-icons/4096/twitter-4096-black.png");
-}
-
-#github {
-	background-image: url("https://peer5.com/website/img/soc_github.png")
-}
-#linkedin {
-	background-image: url("http://www2.psd100.com/ppp/2013/09/2601/linkedin-icon-0926005838.png");
-	background-image: url("https://cdn1.iconfinder.com/data/icons/simple-icons/2048/linkedin-2048-black.png");
-}
-
-
-#email {
-	
-	background-image: url("http://www.definearchitecture.co/images/email-icon.png");
-	background-repeat: no-repeat;
-}
-
-#music {
-	background-image: url("http://www.iconsdb.com/icons/preview/black/soundcloud-2-xxl.png")
-}
-
-
-.logo a:hover {
-	background-color: #00c7d2;
-	opacity: .7;
-} 
-
-
-.blog {
 	background-color: white;
 }
-.blog h1 {
-	text-align: center;
-	font-family: 'Permanent Marker';
-	font-size: 72px;
-	font-weight: bold;
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+.back {
+	background-color: #333333;
+	transform: rotateY(180deg);
+}
+
+.back p {
+	margin-top: 116px;
+	font-size: 36px;
 	color: #00c7d2;
 }
 
-.blog h3 {
-	color:  black;
-	font-family: 'Goudy Bookletter 1911';
-	font-size: 20px;
-	padding: 0 5%;
-	line-height: 1.45em;
-	text-align: center;
-	font-weight: bold;
-}
-.blog h5 {
-	text-align: center;
-	color:   #ffd900;
-	font-family: 'Rock Salt';
-	font-weight: bold;
-	font-size: 15px;
-	padding: 2px;
-	line-height: 1.45em;
-}
-
-.blog p {
-	color:  #333333;
-	font-family: 'Goudy Bookletter 1911';
-	font-size: 18px;
-	padding: 0 5%;
-	line-height: 1.45em;
-}
-
-.sidebar-module {
-	height: auto;
- 	border-radius: 2px;
- 	padding: 10px 10px;
- 	background-color: white;
- 	margin-left: 30px;
-}
-
-.sidebar-module ul {
-	padding: 5px 5px;
-	list-style-type: none;
-	
-}
-.sidebar-module h3 {
-	text-align: center;
-	font-family: 'Rock Salt';
-	color: #ffd900;
-}
-.sidebar-module ul li a {
+.back p:hover {
 	text-decoration: underline;
+}
+
+.main-icon{
+	font-size: 144px;
+	margin-top: 72px;
 	color: #333333;
-	font-family: Arial;
-	line-height: 1.45em;
-	font-size: 14px;
+
 }
 
-.sidebar-module ul li a:hover {
-	background-color: #00c7d2;
-	opacity: .7;
-}
-
-.current-blog {
-	margin-top: 200px;
-}
-.other-blog {
-	margin-top: -5px;	
-}
-
-.hometext{
-background-color: #ffd900;
-padding-bottom: 20px;
-}	
-
-.hometext h3 {
-	color:#00c7d2;
-	font-family: 'Permanent Marker';
-	font-weight: bold;
-	font-size: 30px;
-	color:  #333333;
+.icon-container {
 	text-align: center;
-
-}
-.hometext p {
-	color:  #333333;
-	font-family: 'Goudy Bookletter 1911';
-	font-size: 18px;
-
+	background-color: #ffd900;
 }
 
-.thumbnail {
-	margin-top: 200px;
-	position: relative;
-	font-family: Arial;
-	border-radius: 2px;
-	margin-left: 12%;
-	margin-right: 12%;
-}
 
-.thumbnail h3 {
-	text-align: center;
-	font-family: 'Rock Salt';
-	font-weight: bold;
-	color: #ffd900;
-}
-
-.side-color {
+.spacer {
 	background-color: #333333;
-}
-
-.contentimage img {
-	height: 180px;
-	width: 280px;
-	border: solid 1px #cbcaca; 
-}
-
-.contentimage {
-	margin: 0 auto;
-	margin-left: 28%;
+	height: auto;
+	color: white;
 	overflow: hidden;
 }
 
-.codepic {
-	margin: 0 auto;
-	margin-left: 22%;
-	overflow: hidden;
+.text-info {
+	display: inline-block;
 }
 
-.prettyprint {
-	border-radius: 0px;
-	margin: 0 5%;
-
-}
-
-/*MediaQueries*/
-
-@media screen and (max-width: 991px) {
-	.navbar a {
-		font-size: 18px;
-	}
-	.spacer {
-		height: 20px;
-	}
-
-.sidebar-module {
+.hidden {
 	display: none;
 }
-.thumbnail {
-	display: none;
-}
-.only {
-	display: block;
-}
+
+.resume {
+	position: fixed;
+	width: 70%;
+	height: 90%;
+	left: 15%;
+	top: 5%;
+	z-index: 4;
 }
 
-@media screen and (max-width: 700px) {
-.navbar a {
-		font-size: 12px;
-		padding: 8px 8px;
-	}
-
-.sidebar-module {
-	display: none;
+.resume-button {
+	position: fixed;
+	height: 7%;
+	width: 5%;
+	left: 15.2%;
+	top: 5.3%;
+	z-index: 5;	
+	background-color: white;
 }
-.thumbnail {
-	display: none;
-}
-.blog p {
-	font-size: 20px;
-}
-.blog h1 {
-	font-size: 65px;
-}
-.only {
-	display: block;
-	margin: 1% 1%;
-}
-}
-@media screen and (max-width: 520px) {
-.navbar a {
-		font-size: 11px;
-		padding: 2px 2px;
-	}
-.navbar {
-	height: 10px;
-}
-
-.contentimage {
-	margin: 0 auto;
-	margin-left:10%;
-}
-
-.blog p {
-	font-size: 24px;
-}
-.blog h1 {
-	font-size: 50px;
-}
-.only {
-	display: block;
-}
-	}
