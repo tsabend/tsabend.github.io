@@ -1,17 +1,31 @@
+body {
+	background-color: #f7f7f7;
+}
+
+h3 {
+	text-align: center;
+	font-size: 44px;
+	color: #978fb1;
+	color: #139884;
+}
+p {
+	font-size: 18px;	
+}
+
 .flip-container {
 	perspective: 1000;
 }
-.flip-container:hover .flipper, .flip-container.hover .flipper {
+.flip-container:hover .flipper {
 	transform: rotateY(180deg);
 }
 .flip-container, .front, .back, .me {
-	width:288px;
-	height:288px;
+	width:180px;
+	height:180px;
 	border-radius:50%;
 }
 
 .flipper {
-	transition: 0.4s;
+	transition: 0.45s;
 	transform-style: preserve-3d;
 	position: relative;
 }
@@ -19,23 +33,21 @@
 .front, .back {
 	backface-visibility: hidden;
 	position: absolute;
-	top: 0;
-	left: 0;
 	background-color: white;
 }
 .front {
-	z-index: 2;
+	background-color: #b3d4fc;
 	transform: rotateY(0deg);
 }
 .back {
-	background-color: #333333;
+	background-color: #272244;
 	transform: rotateY(180deg);
 }
 
 .back p {
-	margin-top: 116px;
-	font-size: 36px;
-	color: #00c7d2;
+	margin-top: 66px;
+	font-size: 24px;
+	color: #bb483f;
 }
 
 .back p:hover {
@@ -43,17 +55,15 @@
 }
 
 .main-icon{
-	font-size: 144px;
-	margin-top: 72px;
-	color: #333333;
-
+	font-size: 100px;
+	margin-top: 40px;
+	color: #272244;
 }
 
-.icon-container {
-	text-align: center;
-	background-color: #ffd900;
+.first-icon {
+	font-size: 100px;
+	color: #272244;
 }
-
 
 .spacer {
 	background-color: #333333;
@@ -63,7 +73,8 @@
 }
 
 .text-info {
-	display: inline-block;
+	height: 350px;
+	overflow-y: auto;
 }
 
 .hidden {
@@ -76,7 +87,7 @@
 	height: 90%;
 	left: 15%;
 	top: 5%;
-	z-index: 4;
+	z-index: 2;
 }
 
 .resume-button {
@@ -85,6 +96,7 @@
 	width: 5%;
 	left: 15.2%;
 	top: 5.3%;
-	z-index: 5;	
+	z-index: 3;	
 	background-color: white;
 }
+
