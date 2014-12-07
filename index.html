@@ -12,20 +12,20 @@
 
 <body>
 
-<nav class="spacer center">Thomas Abend</nav>
+<nav class="spacer">
+	<h1 class="left px2">Thomas Abend</h1>
+	<h1 class="right px2 md-show">Web Developer</h1>
+</nav>
 
-<div class="md-hide clearfix mb2 white bg-dark-gray">
-  <div class="left">
-    <a href="#!" data-text="about-me" class="button py2 m0 button-nav-dark">About Me</a>
-    <a href="#!" data-text="projects" class="button button-narrow py2 m0 button-nav-dark">Projects</a>
-    <a href="#!" data-text="skills" class="button button-narrow py2 m0 button-nav-dark">Skills</a>
-  </div>
-  <div class="right">
-    <a href="#!" data-text="education" class="button py2 m0 button-nav-dark">Education</a>
-    <a href="#!" data-text="experience" class="button py2 m0 button-nav-dark">Work Experience</a>
-  </div>
-  <div class="clearfix sm-hide"></div>
-  <div class="overflow-hidden px2 py1">
+<div class="relative inline-block disclosure-group sm-hide" data-disclosure="">
+  <button type="button" class="button white bg-gray">Menu &#x25BE</button>
+  <div class="disclosure-show fixed top-0 right-0 bottom-0 left-0"></div>
+  <div class="disclosure-show absolute left-0 mt1 nowrap bg-gray rounded animation-fadein">
+    <a href="#!" data-text="about-me" class="button py1 m0 button-nav-dark">About Me</a><br>
+    <a href="#!" data-text="projects" class="button py1 m0 button-nav-dark">Projects</a><br>
+    <a href="#!" data-text="skills" class="button py1 m0 button-nav-dark">Skills</a><br>
+    <a href="#!" data-text="education" class="button py1 m0 button-nav-dark">Education</a><br>
+    <a href="#!" data-text="experience" class="button py1 m0 button-nav-dark">Experience</a><br>
   </div>
 </div>
 
@@ -33,7 +33,7 @@
 
 <div class="clearfix mb2">
   <div id="first-icon" class="md-show left p2 mr1">
-  	<i class="fa fa-child first-icon"></i>
+  	<i class="fa fa-child"></i>
   </div>
   <div class="md-show right p2 ml1">
 		<img class="right me" src="images/tabend_hs.jpg"></img>
@@ -49,9 +49,9 @@
   </div>
 </div>
 
-<div class="clearfix icon-container px2 md-show">
+<div class="clearfix icon-container px2 mx-auto sm-show">
 
-	<div class="col md-col-2 mx4 py2">
+	<div class="col sm-col-4 lg-col-2 mx-auto py2">
 		<div data-text="about-me" class="flip-container">
 		  <div class="flipper center">
 		    <div class="front">
@@ -64,7 +64,7 @@
 		</div>
 	</div>
 
-	<div class="col md-col-2 mx4 py2">
+	<div class="col sm-col-4 lg-col-2 mx-auto py2">
 		<div data-text="skills" class="flip-container">
 		  <div class="flipper center">
 		    <div class="front">
@@ -77,7 +77,7 @@
 		</div>
 	</div>
 
-	<div class="col md-col-2 mx4 py2">
+	<div class="col sm-col-4 lg-col-2 mx-auto py2">
 		<div data-text="projects" class="flip-container">
 		  <div class="flipper center">
 		    <div class="front">
@@ -90,7 +90,7 @@
 		</div>
 	</div>
 
-	<div class="col md-col-2 mx4 py2">
+	<div class="col sm-col-4 lg-col-2 mx-auto py2">
 		<div data-text="education" class="flip-container">
 		  <div class="flipper center">
 		    <div class="front">
@@ -103,7 +103,7 @@
 		</div>
 	</div>
 
-	<div class="col md-col-2 mx4 py2">
+	<div class="col sm-col-4 lg-col-2 mx-auto py2">
 		<div data-text="experience" class="flip-container">
 		  <div class="flipper center">
 		    <div class="front">
@@ -116,7 +116,7 @@
 		</div>
 	</div>
 
-	<div class="col md-col-2 mx4 py2">
+	<div class="col sm-col-4 lg-col-2 mx-auto py2">
 		<div data-text="resume" class="flip-container">
 		  <div class="flipper center">
 		    <div class="front">
@@ -131,30 +131,22 @@
 
 </div>
 
-
-
-
-
-
 <div class = "spacer">
 		<a href="http://www.github.com/tsabend/" target="_blank">
-			<i class="fa fa-github white"></i>
+			<i class="fa fa-github white h1 px1 py1"></i>
 		</a>
 
 		<a href="http://www.linkedin.com/in/thomasabend/" target="_blank">
-			<i class="fa fa-linkedin-square white"></i>
+			<i class="fa fa-linkedin-square white h1 px1 py1"></i>
 		</a>
 
 		<a href="mailto: tsabend@gmail.com" target="_blank">
-			<i class="fa fa-envelope white"></i>
+			<i class="fa fa-envelope white h1 px1 py1"></i>
 		</a>
 
-		<span class="right">Copyright 2014</span>	
+		<span class="right white h5 px1 py1">Copyright 2014</span>	
 </div>
-
-
 	
 
-</div>
 
 </body>

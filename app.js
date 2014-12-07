@@ -2,6 +2,29 @@ $(document).ready(function(){
 
 	$('[data-text]').click(contentShift)
 
+  var Disclosure = function(el, options) {
+    var self = this;
+    this.el = el;
+    this.isActive = false;
+    this.toggle = function(e) {
+      e.stopPropagation();
+      self.isActive = !self.isActive;
+      if (self.isActive) {
+        self.el.classList.add('is-active');
+      } else {
+        self.el.classList.remove('is-active');
+      }
+    }
+    this.el.addEventListener('click', function(e) {
+      self.toggle(e);
+    });
+  };
+
+  var disclosures = document.querySelectorAll('[data-disclosure]');
+  for (var i = 0; i < disclosures.length; i++) {
+    new Disclosure(disclosures[i]);
+  }
+
 });
 
 
@@ -15,7 +38,7 @@ var contentShift = function(){
 
 		var box = $('.text-info')
 		$('#first-icon').empty()
-		$('#first-icon').append($('.fa',this).clone())
+		$('#first-icon').append($('.fa',this).clone().removeClass('main-icon'))
 
 		var selected = $(this).data('text')
 		box.html("")
