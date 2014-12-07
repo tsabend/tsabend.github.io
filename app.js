@@ -1,6 +1,6 @@
 $(document).ready(function(){ 
 
-	$('.flip-container').click(contentShift)
+	$('[data-text]').click(contentShift)
 
 });
 
