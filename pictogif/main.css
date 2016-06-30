@@ -1,0 +1,52 @@
+body {
+    background-color: #1b1b1b;
+    text-align: center;
+}
+* {
+    font-family: 'Arial', sans-serif;
+    color: #ed3e77;
+}
+.main, #enhance {
+    max-width: 600px;
+    margin: 100px auto;
+}
+svg {
+    width: 100%;
+}
+#letters, #back-plate {
+    opacity: 0;
+    transform: translateY(40px) translateX(-50px);
+}
+
+/* ~~~~~~~~~~~~~ SVG STYLING ~~~~~~~~~~~~~ */
+
+.st0 {
+    fill: none;
+    stroke: #FF3976;
+    stroke-width: 4;
+}
+.st1 {
+    fill: #1b1b1b;
+}
+.st2 {
+    fill: #FF3976;
+}
+.st3 {
+    fill: none;
+    stroke: #FF3976;
+    stroke-width: 4;
+}
+.cls-1, .cls-2 {
+    fill: none;
+}
+.cls-1, .cls-2, .cls-4 {
+    stroke: #ed3e77;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+}
+.cls-1, .cls-4 {
+    stroke-linecap: round;
+}
+.cls-3, .cls-4 {
+    fill: #1b1b1b;
+}
