@@ -1,13 +1,141 @@
+/* GLOBAL */
+
 body {
     background-color: #1b1b1b;
     text-align: center;
+    height: 1200px;
 }
+
 * {
     font-family: 'Arial', sans-serif;
     color: #ed3e77;
+    box-sizing: border-box;
 }
 
-/* ~~~~~~~~~~~~~ SVG STYLING ~~~~~~~~~~~~~ */
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 200%;
+  z-index: -10;
+}
+
+/* PICTOGIF */
+#pictogif {
+  padding: 200px 0px;
+}
+
+#pictogif img {
+  display: block;
+  margin: 0 auto;
+}
+
+#app-icon {
+  width: 200px;
+}
+
+#pictogif a {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+/* ICON */
+#icon {
+  max-width: 100px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: fixed;
+  top: 100px;
+  padding: 20px;
+  width: 100%;
+}
+
+#icon-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* Pane */
+.pane {
+  border: 2px solid #ff3976;
+  background-color: #1b1b1b;
+  /*box-shadow: 10px 10px 0px #ff3976;*/
+}
+
+.pane-top {
+  border-bottom: 2px solid #ff3976;
+  text-align: left;
+  height: 40px;
+}
+
+.step {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.pane-top .left-text,
+.pane-top .right-btns {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  font-weight: bold;
+}
+.pane-top .left-text {
+  float: left;
+  line-height: 38px;
+  padding-left: 20px;
+}
+
+.pane-top .right-btns {
+  float: right;
+  padding: 6px;
+}
+
+.right-btn {
+  border: 2px solid #ff3976;
+  height: 100%;
+  width: 26px;
+  line-height: 22px;
+  display: inline-block;
+  text-align: center;
+}
+
+.pane-bottom {
+  padding: 100px 50px;
+}
+
+.pane-top,
+.pane-bottom {
+  /*padding: 6px 12px;*/
+}
+
+/* SOCIAL */
+.social {
+  padding-top: 40px;
+}
+
+.social-icon {
+  display: inline-block;
+  padding: 20px;
+}
+
+.social-icon img {
+  width: 40px;
+}
+
+
+/* SVG */
 .cls-1,
 .cls-2 {
   fill: none
