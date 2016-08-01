@@ -47,10 +47,7 @@
       return circleArray[Math.floor(Math.random() * circleArray.length)]
     },
     blinkCircle: function(circle) {
-      if (circle.classList.contains('velocity-animating')) {
-        console.log('lollll');
-        return;
-      };
+      if (circle.classList.contains('velocity-animating')) return;
       v({
         e: circle,
         p: {scale: 0},
