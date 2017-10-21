@@ -1,0 +1,51 @@
+/*
+white:
+#fdfff
+gray:
+#f7f0f
+royal blue:
+#050478
+red:
+#770000
+blueblack:
+#0d0221
+*/
+
+@font-face { font-family: Yikes; src: url('fonts/YikesTypefaceFree/Yikes_medium.ttf'); } 
+@font-face { font-family: Poiret; src: url('fonts/Poiret_One/PoiretOne-Regular.ttf'); } 
+@font-face { font-family: Finity; src: url('fonts/agnes-bertothy_finity/Finity.ttf'); } 
+@font-face { font-family: Viro; src: url('fonts/Viro.otf'); } 
+@font-face { font-family: Axis; src: url('fonts/Axis_Extrabold.otf'); } 
+body {
+  background-color: #FCFBE3;
+  /*color: white;*/
+  font-family: Axis;
+}
+
+h1 {
+  font-family: Futura;
+}
+
+.viro {
+  font-family:  Viro;
+}
+
+.yikes {
+  font-family:  Yikes;
+}
+
+.axis {
+  font-family:  Axis;
+}
+
+.finity {
+  font-family:  Finity;
+}
+
+.poiret {
+  font-family: Futura;
+}
+
+.textbox {
+  padding-top: 12%;
+}
