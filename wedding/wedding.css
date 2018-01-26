@@ -4,7 +4,7 @@ white:
 gray:
 #f7f0f
 royal blue:
-#050478
+#2f2de5
 red:
 #770000
 blueblack:
@@ -19,11 +19,20 @@ blueblack:
 body {
   background-color: #FCFBE3;
   /*color: white;*/
-  font-family: Axis;
+  /* font-family: Axis; */
 }
 
 h1 {
   font-family: Futura;
+}
+
+p {
+  font-family: Lucida Sans;
+}
+
+li {
+  font-family: Lucida Sans;
+  padding-bottom: 16px;
 }
 
 .viro {
@@ -48,4 +57,36 @@ h1 {
 
 .textbox {
   padding-top: 11%;
+}
+
+.navbar {
+  top:0px; 
+  width: 100%;
+  background-color: #FCFBE3;
+}
+
+a {
+  text-decoration: none;
+  color: #2f2de5;
+}
+
+#active-link {
+  color: #050478;
+}
+
+.iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.event-image {
+  width: 100%;
+}
+
+.where-box {
+  height: 24px;
+}
+
+.desc-box {
+  height: 48px;
 }
