@@ -19,19 +19,14 @@ blueblack:
 body {
   background-color: #FCFBE3;
   /*color: white;*/
-  /* font-family: Axis; */
+  font-family: 'Questrial', sans-serif;
 }
 
 h1 {
   font-family: Futura;
 }
 
-p {
-  font-family: Lucida Sans;
-}
-
 li {
-  font-family: Lucida Sans;
   padding-bottom: 16px;
 }
 
