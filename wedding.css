@@ -15,6 +15,7 @@ body {
   background-color:  #FCFBE3;
   /*color: white;*/
   font-family: 'Questrial', sans-serif;
+  font-size: 1.15em;
 }
 
 h1 {
@@ -62,5 +63,5 @@ a {
 }
 
 .desc-box {
-  height: 58px;
+  height: 68px;
 }
