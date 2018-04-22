@@ -65,3 +65,7 @@ a {
 .desc-box {
   height: 68px;
 }
+
+.card {
+  height: 400px;
+}
