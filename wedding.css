@@ -66,6 +66,8 @@ a {
   height: 68px;
 }
 
+@media(min-width:64em) {
 .card {
-  height: 400px;
+    height: 515px;
+  }
 }
